@@ -1,7 +1,7 @@
 # Development Log – The Torchbearer
 
-**Student Name:** ___________________________
-**Student ID:** ___________________________
+**Student Name:** Antonio Hengel
+**Student ID:** 828052622
 
 > Instructions: Write at least four dated entries. Required entry types are marked below.
 > Two to five sentences per entry is sufficient. Write entries as you go, not all in one
@@ -10,12 +10,12 @@
 
 ---
 
-## Entry 1 – [Date]: Initial Plan
+## Entry 1 – [5/12/2026]: Initial Plan
 
 > Required. Write this before writing any code. Describe your plan: what you will
 > implement first, what parts you expect to be difficult, and how you plan to test.
 
-_Your entry here._
+- My plan is to fully understand the requirements then outline what tasks I'll have to do in what order. My first implementation will probably try Dijkstra's algorithm since its an easy to implement greedy approach. I know that I will have to eventually tackle pruning and expect that to be the hardest part. For testing I will for now use the provided tests.
 
 ---
 
