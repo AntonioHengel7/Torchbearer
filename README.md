@@ -35,8 +35,8 @@
 
 | Source Node Type | Why it is a source |
 |---|---|
-| _node type_ | _one-line reason_ |
-| _node type_ | _one-line reason_ |
+| Start | This is a source because we always start from this node. |
+| Relic | This is a source because we will want to go from one relic to the next/exit. |
 
 ### Part 2b: Distance Storage
 
@@ -44,11 +44,11 @@
 
 | Property | Your answer |
 |---|---|
-| Data structure name | |
-| What the keys represent | |
-| What the values represent | |
-| Lookup time complexity | |
-| Why O(1) lookup is possible | |
+| Data structure name | hash map |
+| What the keys represent | outer key = source node, inner key = destination node. |
+| What the values represent | minimum fuel cost from source to destination. |
+| Lookup time complexity | O(1) |
+| Why O(1) lookup is possible | hash table access for both levels is constant because scanning is not required. |
 
 ### Part 2c: Precomputation Complexity
 
