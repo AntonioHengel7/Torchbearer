@@ -142,7 +142,20 @@ def dijkstra_invariant_check():
 
     TODO
     """
-    return "TODO"
+    return (
+        "- The recorded distance for any node in S "
+        "is final and cannot be improved by any other path.\n"
+        "- The recorded distance for any node outside S "
+        "is the best known path that only passes through nodes in S.\n"
+        "- Initially, S is empty, the source has distance 0, and all other nodes "
+        "are infinity, so the best known paths use only S.\n"
+        "- The node with smallest tentative distance cannot be improved later because "
+        "all edge weights are nonnegative, so any alternate path would be at least as large.\n"
+        "- When the algorithm ends, every reachable node has its true shortest distance "
+        "and unreachable nodes remain at infinity.\n"
+        "- Dijkstra must return correct shortest-path costs so the route planner "
+        "compares relic orders using real fuel costs, not underestimates."
+    )
 
 
 # =============================================================================

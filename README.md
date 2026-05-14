@@ -72,29 +72,29 @@
 > Do not copy the invariant text from the spec.
 
 - **For nodes already finalized (in S):**
-  _Your answer here._
+  - The recorded distance for any node in S is final and cannot be improved by any other path.
 
 - **For nodes not yet finalized (not in S):**
-  _Your answer here._
+  - The recorded distance for any node outside S is the best known path that only passes through nodes in S.
 
 ### Part 3b: Why Each Phase Holds
 
 > One to two bullets per phase. Maintenance must mention nonnegative edge weights.
 
 - **Initialization : why the invariant holds before iteration 1:**
-  _Your answer here._
+  - Initially, S is empty, the source has distance 0, and all other nodes are infinity, so the best known paths use only S.
 
 - **Maintenance : why finalizing the min-dist node is always correct:**
-  _Your answer here._
+  - The node with smallest tentative distance cannot be improved later because all edge weights are nonnegative, so any alternate path would be at least as large.
 
 - **Termination : what the invariant guarantees when the algorithm ends:**
-  _Your answer here._
+  - When the algorithm ends, every reachable node has its true shortest distance and unreachable nodes remain at infinity.
 
 ### Part 3c: Why This Matters for the Route Planner
 
 > One sentence connecting correct distances to correct routing decisions.
 
-_Your answer here._
+Dijkstra must return correct shortest-path costs so the route planner compares relic orders using real fuel costs, not underestimates.
 
 ---
 
