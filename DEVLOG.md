@@ -19,12 +19,12 @@
 
 ---
 
-## Entry 2 – [Date]: [Short description]
+## Entry 2 – [5/13/2026]: Testing blocked by missing pipeline
 
 > Required. At least one entry must describe a bug, wrong assumption, or design change
 > you encountered. Describe what went wrong and how you resolved it.
 
-_Your entry here._
+- I tried running the provided tests but hit a TypeError because solve() still returns None. I realized the tests depend on the full pipeline (precompute + route search), so I need to finish those functions before tests will run. For now I am focusing on filling in the remaining functions and then will re-run the tests.
 
 ---
 
