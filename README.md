@@ -54,10 +54,10 @@
 
 > State the total complexity and show the arithmetic. Two to three lines max.
 
-- **Number of Dijkstra runs:** _your answer_
-- **Cost per run:** _your answer_
-- **Total complexity:** _your answer_
-- **Justification (one line):** _your answer_
+- **Number of Dijkstra runs:** k + 1 (Start plus each of the k relics)
+- **Cost per run:** O(mlogn)
+- **Total complexity:** O((k + 1)mlogn)
+- **Justification (one line):** We have to run Dijkstra once per source and then multiply by the per-run cost each time.
 
 ---
 
