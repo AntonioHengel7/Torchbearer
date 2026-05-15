@@ -3,10 +3,6 @@
 **Student Name:** Antonio Hengel
 **Student ID:** 828052622
 
-> Instructions: Write at least four dated entries. Required entry types are marked below.
-> Two to five sentences per entry is sufficient. Write entries as you go, not all in one
-> sitting. Graders check that entries reflect genuine work across multiple sessions.
-> Delete all blockquotes before submitting.
 
 ---
 
@@ -49,12 +45,12 @@
 
 | Part | Estimated Hours |
 |---|---|
-| Part 1: Problem Analysis | |
-| Part 2: Precomputation Design | |
-| Part 3: Algorithm Correctness | |
-| Part 4: Search Design | |
-| Part 5: State and Search Space | |
-| Part 6: Pruning | |
-| Part 7: Implementation | |
-| README and DEVLOG writing | |
-| **Total** | |
+| Part 1: Problem Analysis | 30 mins |
+| Part 2: Precomputation Design | 1 hour |
+| Part 3: Algorithm Correctness | 45 mins |
+| Part 4: Search Design | 45 mins |
+| Part 5: State and Search Space | 45 mins |
+| Part 6: Pruning | 30 mins |
+| Part 7: Implementation | 2 hours |
+| README and DEVLOG writing | 1 hour |
+| **Total** | about 7 hours |
