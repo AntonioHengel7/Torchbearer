@@ -28,18 +28,18 @@
 
 ---
 
-## Entry 3 – [Date]: [Short description]
+## Entry 3 – [5/14/2026]: Implemented search and pruning
 
-_Your entry here._
+- I wrote Parts 4 through 6 in the README to document the search approach and pruning idea. I implemented the recursive _explore() search and wired solve() to the full pipeline. I ran the provided tests and confirmed they all passed.
 
 ---
 
-## Entry 4 – [Date]: Post-Implementation Reflection
+## Entry 4 – [5/14/2026]: Post-Implementation Reflection
 
 > Required. Written after your implementation is complete. Describe what you would
 > change or improve given more time.
 
-_Your entry here._
+- With more time I would add clearer comments in the search code, write extra tests beyond the provided ones, and handle more edge cases explicitly (like disconnected relic subsets).
 
 ---
 
