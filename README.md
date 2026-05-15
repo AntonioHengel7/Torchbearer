@@ -160,23 +160,24 @@ Dijkstra must return correct shortest-path costs so the route planner compares r
 
 > Three bullets.
 
-- **What is tracked:** _Your answer here._
-- **When it is used:** _Your answer here._
-- **What it allows the algorithm to skip:** _Your answer here._
+- **What is tracked:** The best (lowest) total cost found so far and its relic order.
+- **When it is used:** Before expanding a branch, compare its bound or current cost against the best cost.
+- **What it allows the algorithm to skip:** Any partial route that cannot beat the best known solution.
 
 ### Part 6b: Lower Bound Estimation
 
 > Three bullets.
 
-- **What information is available at the current state:** _Your answer here._
-- **What the lower bound accounts for:** _Your answer here._
-- **Why it never overestimates:** _Your answer here._
+- **What information is available at the current state:** Current location, remaining relics, and precomputed distances.
+- **What the lower bound accounts for:** The cheapest move from the current node to any remaining relic plus the cheapest remaining-to-exit cost.
+- **Why it never overestimates:** Any valid route must include a path to some remaining relic and a final path to the exit, so this sum is optimistic.
 
 ### Part 6c: Pruning Correctness
 
 > One to two bullets. Explain why pruning is safe.
 
-- _Your answer here._
+- If the lower bound is already at least the best cost, no completion of this branch can beat the best solution.
+- Therefore pruning cannot remove the optimal route.
 
 ---
 
