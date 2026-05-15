@@ -129,9 +129,9 @@ Dijkstra must return correct shortest-path costs so the route planner compares r
 
 | Component | Variable name in code | Data type | Description |
 |---|---|---|---|
-| Current location | | | |
-| Relics already collected | | | |
-| Fuel cost so far | | | |
+| Current location | current_loc | node | The node where the search is currently located. |
+| Relics already collected | relics_visited_order | list[node] | The ordered list of relics collected so far. |
+| Fuel cost so far | cost_so_far | float | The total fuel cost accumulated up to this state. |
 
 ### Part 5b: Data Structure for Visited Relics
 
@@ -139,18 +139,18 @@ Dijkstra must return correct shortest-path costs so the route planner compares r
 
 | Property | Your answer |
 |---|---|
-| Data structure chosen | |
-| Operation: check if relic already collected | Time complexity: |
-| Operation: mark a relic as collected | Time complexity: |
-| Operation: unmark a relic (backtrack) | Time complexity: |
-| Why this structure fits | |
+| Data structure chosen | set |
+| Operation: check if relic already collected | Time complexity: O(1) |
+| Operation: mark a relic as collected | Time complexity: O(1) |
+| Operation: unmark a relic (backtrack) | Time complexity: O(1) |
+| Why this structure fits | Fast membership checks and add/remove during backtracking. |
 
 ### Part 5c: Worst-Case Search Space
 
 > Two bullets.
 
-- **Worst-case number of orders considered:** _Your answer (in terms of k)._
-- **Why:** _One-line justification._
+- **Worst-case number of orders considered:** k!
+- **Why:** Every relic order is a permutation when no pruning is possible.
 
 ---
 
