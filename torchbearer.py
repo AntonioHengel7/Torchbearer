@@ -172,7 +172,17 @@ def explain_search():
 
     TODO
     """
-    return "TODO"
+    return (
+        "- Greedy picks the next relic with the smallest immediate cost, which can trap the route "
+        "into expensive later moves.\n"
+        "- Using the spec example, from S the costs are S->B=1, S->C=2, S->D=2, and some relic-to-relic "
+        "edges cost 100 while others cost 1.\n"
+        "- Greedy picks B first because it is the cheapest immediate move from S.\n"
+        "- The optimal order is S->B->D->C->T with total cost 4, while other greedy-like orders cost more.\n"
+        "- The locally cheapest step can force a later 100-cost edge, so the overall sum is worse than a "
+        "different order.\n"
+        "- The algorithm must explore different relic visitation order choices, not just the cheapest next step."
+    )
 
 
 # =============================================================================

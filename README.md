@@ -105,17 +105,18 @@ Dijkstra must return correct shortest-path costs so the route planner compares r
 > State the failure mode. Then give a concrete counter-example using specific node names
 > or costs (you may use the illustration example from the spec). Three to five bullets.
 
-- **The failure mode:** _Your answer here._
-- **Counter-example setup:** _Your answer here._
-- **What greedy picks:** _Your answer here._
-- **What optimal picks:** _Your answer here._
-- **Why greedy loses:** _Your answer here._
+- **The failure mode:** Greedy picks the next relic with the smallest immediate cost, which can trap the route into expensive later moves.
+- **Counter-example setup:** Using the spec example, from S the costs are S->B=1, S->C=2, S->D=2, and some relic-to-relic edges cost 100 while others cost 1.
+- **What greedy picks:** Greedy picks B first because it is the cheapest immediate move from S.
+- **What optimal picks:** The optimal order is S->B->D->C->T with total cost 4, while other greedy-like orders cost more.
+- **Why greedy loses:** The locally cheapest step can force a later 100-cost edge, so the overall sum is worse than a different order.
 
 ### What the Algorithm Must Explore
 
 > One bullet. Must use the word "order."
 
 - _Your answer here._
+- The algorithm must explore different relic visitation order choices, not just the cheapest next step.
 
 ---
 
