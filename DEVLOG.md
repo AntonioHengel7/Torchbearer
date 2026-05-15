@@ -30,7 +30,7 @@
 
 ## Entry 3 – [5/14/2026]: Implemented search and pruning
 
-- I wrote Parts 4 through 6 in the README to document the search approach and pruning idea. I implemented the recursive _explore() search and wired solve() to the full pipeline. I ran the provided tests and confirmed they all passed.
+- I wrote Parts 4 through 6 in the README to document the search approach and pruning idea. I implemented the recursive _explore() search and wired solve() to the full pipeline. I ran the provided tests and confirmed they all passed. I also compared the search behavior against the spec examples to make sure the ordering logic made sense.
 
 ---
 
@@ -39,7 +39,7 @@
 > Required. Written after your implementation is complete. Describe what you would
 > change or improve given more time.
 
-- With more time I would add clearer comments in the search code, write extra tests beyond the provided ones, and handle more edge cases explicitly (like disconnected relic subsets).
+- With more time I would add clearer comments in the search code so the pruning rationale is easier to follow. I would also write extra tests beyond the provided ones and handle more edge cases explicitly, like disconnected relic subsets or missing exit paths.
 
 ---
 
